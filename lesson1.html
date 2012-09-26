@@ -2,10 +2,11 @@
 <html lang="en">
     <head>
         <title>CodeEd: Block1</title>
-
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/bootstrap-responsive.css" rel="stylesheet">
         <link href="css/docs.css" rel="stylesheet">
+        <link href="css/codeed.css" rel="stylesheet">
         <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
     </head>
 
@@ -24,26 +25,11 @@
                     <a class="brand" href="http://www.codeed.org/">CodeEd</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li class="active">
+                            <li class="">
                                 <a href="/index.html">Home</a>
                             </li>
-                            <li class="">
+                            <li class="active">
                                 <a href="/lesson1.html">Lesson 1</a>
-                            </li>
-                            <li class="">
-                                <a href="/lesson2.html">Lesson 2</a>
-                            </li>
-                            <li class="">
-                                <a href="/lesson3.html">Lesson 3</a>
-                            </li>
-                            <li class="">
-                                <a href="/lesson4.html">Lesson 4</a>
-                            </li>
-                            <li class="">
-                                <a href="/lesson5.html">Lesson 5</a>
-                            </li>
-                            <li class="">
-                                <a href="/links.html">Links</a>
                             </li>
                         </ul>
                     </div>
@@ -54,7 +40,7 @@
         <header class="jumbotron subhead" id="overview">
             <div class="container">
                 <h1>CodeEd</h1>
-                <p class="lead">Learning how to make web pages.</p>
+                <p class="lead">Lesson 1: Learning about HTML.</p>
             </div>
         </header>
 
@@ -64,24 +50,43 @@
 
                 <div class="span3 bs-docs-sidebar">
                     <ul class="nav nav-list bs-docs-sidenav">
-                        <li><a href="#start"><i class="icon-chevron-right"></i> Getting Started</a></li>
-                        <li><a href="#fluidGridSystem"><i class="icon-chevron-right"></i> Fluid grid system</a></li>
-                        <li><a href="#layouts"><i class="icon-chevron-right"></i> Layouts</a></li>
-                        <li><a href="#responsive"><i class="icon-chevron-right"></i> Responsive design</a></li>
+                        <li class="active"><a href="#websites"><i class="icon-chevron-right"></i> 1. Geany basic editing</a></li>
+                        <li><a href="#teachers"><i class="icon-chevron-right"></i> 2.Publishing and viewing </a></li>
+                        <li><a href="#help"><i class="icon-chevron-right"></i> 3.What are HTML tags</a></li>
+                        <li><a href="#resources"><i class="icon-chevron-right"></i> 4 Practice time!</a></li>
                     </ul>
                 </div>
 
                 <div class="span9">
-                    <!-- Global Bootstrap settings
-                         ================================================== -->
-                    <section id="start">
-                        <div class="page-header">
-                            <h1>Getting Started</h1>
-                        </div>
+                    <section id="websites">
+                        <h3>Sample code syntax</h3>
+                        <p>Here is some sample code</p>
 
-                        <h3>Requires HTML5 doctype</h3>
-                        <p>Bootstrap makes use of certain HTML elements and CSS properties that require the use of the et block has been dropped in favor oilerplate.com" ta utilizes <strong>12 columns</strong>, making for ort. Bel class="span1"></p>
+<pre class="prettyprint">
+&lt;body&gt;
+  &lt;div class="container"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/body&gt;
+</pre>
+
+<pre class="prettyprint linenums">
+&lt;div class="container-fluid"&gt;
+  &lt;div class="row-fluid"&gt;
+    &lt;div class="span2"&gt;
+      &lt;!--Sidebar content--&gt;
+    &lt;/div&gt;
+    &lt;div class="span10"&gt;
+      &lt;!--Body content--&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<div style="font-size: 24px; line-hight: 24px; background-color: #CCCCCC;height: 200px;" contenteditable></div>
+
                     </section>
+
                 </div>
 
             </div><!-- /row -->
@@ -98,6 +103,7 @@
         <p>Designed using <a href="https://github.com/twitter/bootstrap/wiki">Twitter Bootstrap</a>.</p>
         <ul class="footer-links">
           <li><a href="mailto:block1@codeed.org?subject=help!">Get Help</a></li>
+          <li><a href="http://block2.codeed.org">Visit Block2</a></li>
         </ul>
       </div>
     </footer>
@@ -124,6 +130,7 @@
     <script src="/js/bootstrap-typeahead.js"></script>
     <script src="/js/bootstrap-affix.js"></script>
     <script src="/js/application.js"></script>
+    <script src="/js/codeed.js"></script>
 
     </body>
 </html>
