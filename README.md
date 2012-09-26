@@ -1,4 +1,4 @@
-block1
+CodeEd: Block1 Website
 ======
 
-Block1
+This is the CodeEd Block1 website available at http://block1.codeed.org/.
