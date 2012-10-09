@@ -50,3 +50,7 @@ ul.teacher.tiles li img{
     height: 100px;
     opacity: 1;
 }
+
+.shortcuts td {
+	padding: 8px;
+}

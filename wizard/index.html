@@ -25,8 +25,14 @@
                     <a class="brand" href="http://www.codeed.org/">CodeEd</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li class="active">
+                            <li class="">
                                 <a href="/index.html">Home</a>
+                            </li>
+                            <li class="">
+                                <a href="/lesson1.html">Lesson 1</a>
+                            </li>
+                            <li class="active">
+                                <a href="/wizard">HTML Wizard</a>
                             </li>
                         </ul>
                     </div>
@@ -52,13 +58,13 @@
                         <div id="rendered-html" style="border: dotted 1px grey; margin-bottom: 10px; padding: 10px;"><h1>hello world!</h1></div>
 
                         <h3 style="margin-top: 40px;">HTML code:</h3>
-                        <pre id="color-coded" class="prettyprint linenums">&lt;h1&gt;hello world!&lt;/h1&gt;</pre>
+                        <!--<pre id="color-coded" class="prettyprint linenums">&lt;h1&gt;hello world!&lt;/h1&gt;</pre>-->
 
-                        <form id="htmlize-form" style="margin-top: 40px;">
-                            <textarea id="plain-code" style="width: 100%; font-size: 24px; min-height: 200px;"><h1>hello world!</h1></textarea>
-                            <button type="button" id="render-button" class="btn btn-small" style="margin: 10px 0;">Render</button>
-                            <button type="button" id="html-button"class="btn btn-small" style="margin: 10px 0;">HTML</button>
-                            <button type="button" id="both-button" class="btn btn-small" style="margin: 10px 0;">Both</button>
+                        <form id="htmlize-form">
+                            <textarea id="plain-code" style="font-family: monospace; width: 100%; font-size: 24px; min-height: 200px;"><h1>hello world!</h1></textarea>
+                            <button type="button" id="render-button" class="btn btn-small" style="margin: 10px 0;">Save</button>
+                            <button type="button" id="html-button" class="btn btn-small" style="display: none; margin: 10px 0;">HTML</button>
+                            <button type="button" id="both-button" class="btn btn-small" style="display: none; margin: 10px 0;">Both</button>
                             <button type="button" id="clear-button" class="btn btn-small" style="float: right; margin: 10px 0;">clear</button>
                             <button type="button" id="decode-button" class="btn btn-small" style="float: right; margin: 10px 5px 10px 0;">decode</button>
                             <button type="button" id="encode-button" class="btn btn-small" style="float: right; margin: 10px 5px 10px 0;">encode</button>
